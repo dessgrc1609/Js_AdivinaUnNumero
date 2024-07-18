@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bienvenido al Juego - Adivina un número</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container mt-5 text-center">
+        <h1> Adivina un número</h1>
+        <p id="message" class="text-center mt-4"> Piensa en un número del 1 al 100. Tu número ¿Cuál es?</p>
+        <button id="startButton" class="btn btn-primary" onclick="checkGuess('Comenzar')">Comenzar</button>
+        <button id="higherButton" class="btn btn-primary" onclick="checkGuess('mayor')"> Mi número es mayor</button>
+        <button id="lowerButton" class="btn btn-primary" onclick="checkGuess('menor')">Mi número es menor</button>
+        <button id="correctButton" class="btn btn-primary" onclick="checkGuess('correcto')"> Correcto </button>
+        <p id="result"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
